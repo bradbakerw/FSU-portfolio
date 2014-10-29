@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document
+Created by Brad Baker on 11/13/13*/
+
+/* window widths smaller than 1060px - the original container size + margins */
+@media screen and (max-width: 1060px) {
+	
+	/* switch from static 960px container to a fluid 90% container at smaller display sizes */
+	.container {
+		width: 90%;
+	}
+	
+	/* half containers (2-columns) don't work on small displays, change to 80% container centered on display */
+	.half_container {
+  		width: 80%;
+  		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/* adjust button left and right padding so buttons don't wrap to 2nd row on smaller displays */
+	ul#menu li a.button {
+		padding: 10px 25px;
+		font-size: 16px;
+	}
+
+	ul#menu li {
+		padding-bottom: 20px;
+	} 		
+	
+	
+	/* force embedded youtube video to shrink width with display size */
+	/* can't do anything about height */
+	iframe {
+       width: 100%;
+	}
+	
+	/* shrink splash area for smaller displays */
+	#splash {
+		height: 700px;
+		background-size: 1060px;
+	}	
+	
+	/* always use default font sizes for mobile devices */ 
+	/* this cancels the 14 px font in style.css */
+	p {
+		font-size: 1em; 
+	}
+	#title-page h1{
+		margin-top: 400px;
+		font-size: 40px;
+	}
+	#title-page h3{
+		font-size: 1em;
+	}
+	#transition0 {
+		margin-top: -100px;
+	}
+	ul #footer_content {
+		float: none;
+		margin: 0 auto;
+		padding: none;
+	}
+	ul#footer_content li {
+		float: none;
+		padding-top: 20px;
+		text-align: center;
+	}
+	#brad {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: table-cell;
+	}
+	table {
+		float: none;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
+/* window widths smaller than 760px - tablets */
+@media screen and (max-width: 767px) {
+	
+	/* adjust button left and right padding so buttons don't wrap to 2nd row on smaller displays */
+	#navbar {
+		height: 100px;
+	}
+	ul#menu li a.button {
+		padding: 8px 10px;
+		font-size: 13px;
+	}
+
+	ul#menu li {
+		padding-bottom: 15px;
+	} 
+	
+	/* make images 100% width to avoid awkward text wrapping */
+	img{
+		width: 100%;
+		height: auto;
+	}
+	
+	/* keep image in footer credits from adopting 100% width */
+	/*#credits img{
+  		width: 100px;	
+    }*/
+	
+	/* shrink splash area for smaller displays */
+	#splash {
+		height: 542px;
+		background-size: 767px;
+	}
+	#title-page h1{
+		margin-top: 300px;
+		font-size: 30px;
+	}
+	#title-page h3{
+		font-size: 0.7em;
+	}
+
+
+}
+
+/* window widths smaller than 480px - smartphones */
+@media screen and (max-width: 480px) {
+	.container #menu {
+		min-width: 320px;
+		padding-left: 0px;
+	}
+	.container {
+		min-width: 280px;
+	}
+	
+	/* adjust button font size and left and right padding so buttons don't wrap to 2nd row on smaller displays */
+	ul#menu li a.button {
+		font-size: .8em;
+		padding: 5px 5px; 
+	}
+	
+	/* shrink splash area for smaller displays */
+	#splash {
+		height: 340px;
+		background-size: 480px;
+	}
+	
+	/* keep the title from being pushed down off the display */	
+	#title-page h1{
+  		margin-top: 100px;
+		font-size: 1.4em;
+	}
+	#title-page h3{
+		font-size: 1em;
+		padding: 0;
+		margin: 0;
+	}
+	#about h1,h3 {
+		text-shadow: none;
+	}
+	h1,h2{
+		font-size: 1.5em;
+	}
+	p, li, h3, h4{
+		font-size: 1em;
+	}
+	footer {
+		font-size: 0.8em;
+	}
+}
+
+

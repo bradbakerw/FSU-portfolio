@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>OMC Photos</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="pics.css" rel="stylesheet" type="text/css">
+	<link href="media-queries.css" rel="stylesheet" type="text/css">
+</head>
+
+</head>
+
+<body>
+	
+<!------------- SPLASH SECTION -------------------->
+	
+	<section id="splash">  
+	<!--Navigation Bar holds Navigation Buttons -->
+	<div id="navbar">
+		<div class="container">  <!-- container keeps everything aligned and centered no matter what the window size -->
+			<ul  id="menu">
+				<!-- button class provides button-like appearance and scrolling javascript (see bottom of html code) -->
+				<li><a href="index.html" class="button">Home</a></li>
+				<li><a href="#splash" class="button">Top</a></li>
+				<li><a href="#pics" class="button">Photo Viewer</a></li>
+
+			</ul>
+		</div> <!-- end container -->
+	</div> <!-- end navbar -->
+	
+<!-- Title page -->
+	<div id="title-page">
+	    <div class="container"> 
+		<h1>Outdoor Mission Camp</h1>
+		<h3>Introducing People to the Creator through the Majesty of His Creation</h3>
+		<div id="nav-arrows-right">
+				<!-- image sprites are used for arrow buttons to provide hover effect -->
+		    <!-- button class is used to provide scrolling javascript (see bottom of html code) -->
+		    <!-- since button class is used outside menu div, the button-like appearance is not applied -->
+		    <!-- only down arrow needed since this is at top of page -->        
+				<a id="down-arrow" href="#pics" class="button"></a>
+		</div> <!-- end nav-arrows-right -->
+	    </div> <!-- end container -->
+	</div> <!-- end title-page -->
+	</section> <!-- end SPLASH section -->
+<!------------------------ Transition 0 -------------------------->
+	
+	<section id="transition0">
+	</section>
+	
+<!--------------------- PHOTOS section-------------------------->
+	
+	<section id="pics">
+		<div class="container">
+			<h1>OMC Photos</h1>
+		<p>Pics of OMC below. Categories include: <br />
+		SHERPA / WILD / SKI RETREAT / CUSTOM CAMPS.
+		</p>
+			
+<!-- Photo sample content here -->
+	<div id="box">
+
+		<ul id="slider">
+			<li id="1" >
+				<img src="images/grass-blades.jpg" alt="grass-blades" width="700" height="438" />
+				<p><span>Some grass representing the outdoors nature of the camp</span></p>
+			</li>
+			<li id="2">
+				<img src="images/sherpa1.jpg" alt="sherpa1" width="700" height="438" />
+				<p><span>Campers backpacking in the Great Smoky Mountains</span></p>
+			</li>
+			<li id="3">
+				<img src="images/campers.jpg" alt="campers" width="700" height="438" />
+				<p><span>A group of excited Campers below thunderbolt Knob before a long journey</span></p>
+			</li>
+			<li id="4">
+				<img src="images/stones.jpg" alt="stones" width="700" height="438" />
+				<p><span>Rocks...because OMC Rocks!</span></p>
+			</li>
+		</ul>
+	
+		<ul id="thumb">
+			<li><a href="#1"><img src="images/grass-blades.jpg" alt="grass-blades" width="50" height="50" /></a></li>
+			<li><a href="#2"><img src="images/sherpa1.jpg" alt="sherpa" width="50" height="50" /></a></li>
+			<li><a href="#3"><img src="images/campers.jpg" alt="campers" width="50" height="50" /></a></li>
+			<li><a href="#4"><img src="images/stones.jpg" alt="stones" width="50" height="50" /></a></li>
+		</ul>
+
+	</div>
+<!-- end photo sample content -->
+			<div id="nav-arrows_single">
+				<a id="up-arrow" href="#splash" class="button"></a>
+			</div>
+<!-- end nav-arrows -->
+		
+		<a id="linkhome" href="index.html">Home</a>
+		</div> <!-- end container -->	
+	</section>
+<!--------------------- end PHOTO section --------------------->
+	
+<!---------------------- Transition 4 ------------------------->
+	
+	<section id="transition4_pics">
+		
+	</section>
+	
+<!--------------------- FOOTER section ------------------------>
+	
+	<section id="footer">
+		<div class="container">
+			<div id="author">
+				<h3>About the Author:</h3>
+				<h4>Brad Baker is part-time year-round staff for Outdoor Mission Camp,
+			and has served the past 3 summers full time at OMC. He is graduating from FSU in
+			December 2013 with a double major in Music and Psychology.</h4>
+			</div>
+			<img id="brad" src="images/brad.jpg" alt="a photo of me" >
+			<ul id="footer_content">
+				<li>Webpage by Brad Baker </li>
+				<li>Created 10/24/13 </li>
+				<li>Images courtesy of Wikipedia </li>
+				<li>Javascript courtesy of Geo Miller</li>
+				<li>Color Palette</li>
+			</ul>
+			<!-- <div class="container"> -->
+			
+				<table>
+					<tr>
+						<td bgcolor="#333">&nbsp;</td>
+						<td bgcolor="#fff">&nbsp;</td>
+					</tr>
+					<tr>
+						<td bgcolor="#000">&nbsp;</td>
+						<td bgcolor="#ace">&nbsp;</td>
+					</tr>
+				</table>
+			
+			
+		 </div> 	
+	</section>
+	
+<!----------------------- end FOOTER section -------------------->
+	
+<!-- JAVASCRIPT CODE -->
+	
+	<!--jquery required for scrolling effect -->
+	<script src="jquery.js"></script>
+	
+	<!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+	<script type='text/javascript'>
+	jQuery(document).ready(function () {
+	  jQuery('.button').click(function() {
+	    targetName = jQuery(this).attr('href');
+	    targetLocation = jQuery(targetName).offset().top;
+	    jQuery('html, body').animate({scrollTop:targetLocation}, 600 );
+	    return false;
+	  });
+	});
+	</script>
+</body>
+
+</html>

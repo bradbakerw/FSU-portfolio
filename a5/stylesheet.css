@@ -1,0 +1,86 @@
+/*LB 2ae
+ *DB 019
+ *LG 3fd
+ *MG 2e4
+ *BG 9f2*/
+/*Pallette 2:
+ *Grey DEF
+ *DB 25A
+ *MB 39D
+ *LB 6BD
+ *Brown 862
+ *Gold FD0
+ *Magenta 702
+*/
+
+body {
+	background-color: #09a;
+	color: #25a;
+}
+
+#container {
+	width:75%;
+	margin: 0 auto;
+	background-color: #6bd;
+	height: 550px;
+        border: solid 2px #def;
+	min-width: 550px;
+}
+
+#register_box {
+	width: 500px;
+	position: fixed;
+	left: 30%;
+	width: 40%;
+	min-width: 280px;
+	top: 15%;
+	border: 2px solid #def;
+	box-shadow: 0px 0px 500px 500px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	background-color: #2ae;
+        display: none;
+}
+#reg_fields {
+	margin-left: 50px;
+}
+#nav {
+	float: left;
+	width: 200px;
+	height: 500px;
+	padding: 25px;
+	margin: 0 50px 0 0;
+	background-color:#09d;
+        border-right: solid 2px #def;
+}
+
+#login_box {
+	width: auto;
+	display: none;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+	border: 1px;
+	box-shadow: 10px 10px 8px rgba(110, 110, 110, 0.5);
+	background-color: #2ae; 
+}
+
+#content {
+	margin: 50px;
+	display: block;
+
+
+}
+.box_error {
+	border: 3px solid #a00;
+}
+input {
+	border: solid 2px #ccc;
+	box-shadow: 5px 5px 3px #588;
+}
+#notice{
+	font-size: 12px;
+	color: #eee;
+}
+h1 {
+	text-align: center;
+}

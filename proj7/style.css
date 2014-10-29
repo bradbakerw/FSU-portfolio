@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* CSS Document
+ * Created by Brad Baker on 11/13/13
+ * Color Palette
+ * grey-pink: AB7D93 / 171,125,147
+ * Dark Blue 003 / 0,0,41
+ * faded blue:45a / 68,90,165
+ * Blue: 1841A6 / 24,65,166
+ * off-white: F3F6ED / 243,246,237
+*/
+
+/* --------------------------- STYLED TAGS ----------------------------- */
+
+body {
+  margin: 0px; /* always zero out defaul browser margins and padding */
+  padding: 0px;
+  background: url(images/blueridge.jpg) no-repeat center bottom fixed;
+  /*background: rgba(170,204,238,1);*/
+  /*background: url(http://th02.deviantart.net/fs70/PRE/i/2012/260/5/9/asphalt_texture_by_pepness-d5f0cnm.png) repeat;*/
+  font-family: "Avant Garde", Bookman, Arial, sans-serif;
+}
+p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+h1 {
+  padding: 50px 0;
+  text-shadow: 2px 2px #000;
+}
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 2px 2px #000;
+}
+table {
+	border: solid #ace 2px;
+	border-collapse:collapse;
+	float: left;
+	margin-top: 20px;
+}
+td {
+	width: 27px;
+	height: 28px;
+	border: solid #ace 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #6297F9;
+	text-align: center;
+	padding: 4px;
+	border: solid #ace 1px;
+}
+a:link {
+	color: #69f;
+}
+a:visited {
+	color: #69f;
+}
+a:hover {
+	color: #47d;
+	text-decoration: none;
+}
+
+/* ------------------------------- PAGE SECTIONS ------------------------------------ */
+/* Visual sections of page are defined below in order of presentation */  
+/* Transitions provide shadow effect between sections */
+
+#splash {
+    color: #fff;
+    background: url(images/blueridge.jpg) no-repeat center top fixed;
+    background-size: cover;  
+    height: 800px;
+
+}
+/* ---------- TITLE PAGE STYLES ------------- */
+
+#title-page{
+  width: 100%;
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px #000;
+  margin-top: 500px;
+  padding: 0px;
+}
+#title-page h3 {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 20px; /* to push nav arrow down */
+  text-shadow: 1px 1px #000;
+}
+/* ------- end TITLE PAGE STYLES ----------- */
+
+/* transitions use slice graphics only a few pixels wide repeated over x */
+#transition0 {
+    margin: -50px 0 0 0;  
+    height: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(250,250,250,0.0)), to(#ace));
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYWNjZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(250,250,250,0) 0%, rgba(170,204,238,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,250,250,0)), color-stop(100%,rgba(170,204,238,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(250,250,250,0) 0%,rgba(170,204,238,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(250,250,250,0) 0%,rgba(170,204,238,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(250,250,250,0) 0%,rgba(170,204,238,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(250,250,250,0) 0%,rgba(170,204,238,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fafafa', endColorstr='#aaccee',GradientType=0 ); /* IE6-8 */
+}
+#about {
+    padding: 50px;
+    margin: 0;
+    background-color: #ace;
+    color: #07a;
+    min-height: 500px;
+}
+#about h1,h3{
+text-shadow: 2px 2px #146;
+}
+ul #about {
+  list-style: none;
+}
+#transition1 {
+    height: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ace), to(#333));
+    background: rgb(170,204,238); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhY2NlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(170,204,238,1) 0%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,204,238,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaccee', endColorstr='#333333',GradientType=0 ); /* IE6-8 */
+}
+#sherpa {	
+    background-color: #333;
+	color: #fff;
+    padding: 50px;
+    min-height: 500px;
+}
+#sherpa img{	
+    border: 4px solid #555;
+}
+#sherpa h3{	
+    margin-top: 30px;
+}
+#transition2 {
+    height: 30px;
+    /*background: url(images/333-shadow-down.png) repeat-x;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000));
+    background: rgb(51,51,51); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+
+}
+#wild{
+    padding: 50px;
+    background-color: #000;
+    color: #ace;
+    min-height: 500px;
+}
+#transition3 {
+    height: 30px;
+     background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0,0,0,0.3)));
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.3))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.3) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-8 */
+    /*background: url(images/footer-shadow-down.png) repeat-x;*/
+}
+#get_involved {
+    padding: 50px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    min-height: 700px;
+}
+
+#transition4 {
+    height: 30px;
+     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.3)), to(#333));
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#333333',GradientType=0 ); /* IE6-8 */
+    /*background: url(images/footer-shadow-down.png) repeat-x;*/
+}
+#footer{
+    background-color: #333;
+    color: #fff;
+}
+
+/* -------------------------------- CONTAINER STYLES ----------------------------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 900px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	width: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(0,0,0,0)));
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00000000',GradientType=0 ); /* IE6-8 */
+	height: 150px;
+	position: fixed;
+	z-index: 5;
+}
+/* horizontal menu bars are typically created using a styled unordered list. Here's how!*/
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 20px;
+	margin: 0;
+} 
+ul#menu li {
+	float: left;  /*changes list from vertical to horizontal*/
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 20px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 10px 35px;
+}
+
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background: -webkit-gradient(linear, left top, left bottom,
+	from(rgba(255, 255, 255, 0.5)), to(rgba(200, 225, 255, 1)));
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M4ZTFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(200,225,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(200,225,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(200,225,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(200,225,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(200,225,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(200,225,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#c8e1ff',GradientType=0 ); /* IE6-8 */
+	border-radius: 15px;
+	border:0px solid white;
+}  
+
+/* ----------------- NAVIGATION ARROW (^ v) STYLES -------------------*/ 
+
+#nav-arrows {   /* space for navigation arrows to reside */
+      width: 100px;
+      margin-left: auto;  /* centered on page */
+      margin-right: auto;
+      padding-top: 20px;
+}
+#nav-arrows_single {   /* space for navigation arrows to reside */
+      width: 50px;
+      margin-left: auto;  /* centered on page */
+      margin-right: auto;
+      padding-top: 20px;
+}
+#nav-arrows-right {  /* space for nav arrows on title page are right aligned */
+      width: 100px;
+      margin-left: auto;
+      margin-right: 0;
+      padding-top: 20px;
+}
+/* utilize image sprites for fast loading hover effects */
+/* learn about it at http://www.w3schools.com/css/css_image_sprites.asp */
+a#up-arrow{ 
+    display:block;
+    background:url(images/arrow-up.png) no-repeat 0px 0px scroll;
+    width:48px;
+    height:28px;
+   /* float: left;*/
+}
+a#up-arrow:hover{
+    background-position:-49px 0px;
+}
+a#down-arrow{
+    display:block;
+    background:url(images/arrow-down.png) no-repeat 0px 0px scroll;
+    width:48px;
+    height:28px;
+	float: left;
+}
+a#down-arrow:hover{
+    background-position:-49px 0px;
+}
+
+
+/* ------------------- FOOTER --------------------- */
+#footer{
+	width: 100%;
+	background-color: #333;
+	font-size: 10px;
+}
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#footer_content {
+	list-style: none;
+	/*float: left; */
+	
+	/* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	
+} 
+ul#footer_content li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-top: 40px;
+	padding-right: 20px;
+}
+#author{
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+#brad{
+  width: 60px;
+  border: 2px solid #555;
+  margin: 20px;
+  float: left;
+}
+
+
+/* ---------------------- MISC -----------------------------*/
+
+#fltright{
+	float:right;
+	margin: 20px;
+}
+#fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
+#video{
+  float: right;
+  margin: 40px;
+  border: 4px solid #333;
+}
+img {
+    border: 4px solid #777;
+    /*margin: 20px;*/
+}
+#pics {
+    padding: 50px;
+    margin: 0;
+    background-color: #ace;
+    min-height: 600px;
+}
+#transition4_pics {
+    height: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ace), to(#333));
+    background: rgb(170,204,238); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhY2NlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(170,204,238,1) 0%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,204,238,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(170,204,238,1) 0%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaccee', endColorstr='#333333',GradientType=0 ); /* IE6-8 */
+}
+#omc_links{
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#linkhome{
+  display: block;
+  margin-top: 50px;
+/* I want linkhome to be to the bottom left of the page, about 50px lower than the up arrow under the pics.
+I also plan to move it back in pics.html to the main photos section, and NOT inside of transition4.*/
+}
